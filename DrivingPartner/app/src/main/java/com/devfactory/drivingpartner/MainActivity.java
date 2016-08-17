@@ -1,6 +1,7 @@
 package com.devfactory.drivingpartner;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,6 +12,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // 스플레시를 실행한다.
+        // 로그인인 페이지 실행도 나중에 여기에 구현할 예정이다.
+        startActivity(new Intent(this, SplashActivity.class));
     }
 
     @Override
