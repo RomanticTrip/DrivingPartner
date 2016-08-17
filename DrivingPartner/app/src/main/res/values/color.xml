@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="basic_white">#ffffff</color>
+    <color name="basic_black">#000000</color>
+    <color name="basic_darkgray">#363636</color>
+    <color name="basic_background">#dfdfdf</color>
+    <color name="basic_Opacity">#00000000</color>
+    <color name="basic_blue">#0b4e90</color>
+    <color name="basic_blue_dark">#2a65a1</color>
+
+
+</resources>
