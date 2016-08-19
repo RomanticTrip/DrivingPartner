@@ -7,15 +7,18 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     //예제 리스트 (지울것)
     ArrayList<String> arrayList1;
 
     private RecyclerView mRecyclerView;
+    private RelativeLayout mSearchLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,10 +63,23 @@ public class MainActivity extends Activity {
         adapter.notifyDataSetChanged();
         mRecyclerView.setAdapter(adapter);
 
+        mSearchLayout = (RelativeLayout) findViewById(R.id.search_layout_main);
+        mSearchLayout.setOnClickListener(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent;
+        switch (v.getId())
+        {
+            case R.id.search_layout_main:
+                intent = new Intent(this,SplashActivity.class);
+                startActivity(intent);
+        }
     }
 }
