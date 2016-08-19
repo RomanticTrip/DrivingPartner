@@ -78,7 +78,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         switch (v.getId())
         {
             case R.id.search_layout_main:
-                intent = new Intent(this,SplashActivity.class);
+                intent = new Intent(this, SearchActivity.class);
                 startActivity(intent);
         }
     }

@@ -30,6 +30,7 @@
     <style name="ToolbarTextStyle">
         <item name="android:textSize">9pt</item>
         <item name="android:textColor">@color/basic_white</item>
+        <item name="android:textColorHint">@color/basic_white</item>
     </style>
 
 </resources>

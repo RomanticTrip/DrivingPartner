@@ -6,4 +6,5 @@
     <string name="title_activity_splash">SplashActivity</string>
 
     <string name="hint_searchview_toolbar_main">      장소, 주소, 주변 검색</string>
+    <string name="title_activity_search">SearchActivity</string>
 </resources>
