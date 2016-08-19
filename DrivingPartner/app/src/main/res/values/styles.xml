@@ -26,5 +26,10 @@
         <item name="android:background">@color/basic_blue</item>
         <item name="titleTextColor">@color/basic_white</item>
     </style>
+    
+    <style name="ToolbarTextStyle">
+        <item name="android:textSize">9pt</item>
+        <item name="android:textColor">@color/basic_white</item>
+    </style>
 
 </resources>
