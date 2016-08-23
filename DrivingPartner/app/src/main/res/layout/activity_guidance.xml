@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devfactory.drivingpartner.app.guidance.GuidanceActivity">
+
+    <LinearLayout
+        android:id="@+id/MapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aaa_map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:background="@drawable/mapp">
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frgment_guidance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:layout_below="@id/aaa_map">
+    </FrameLayout>
+
+</RelativeLayout>

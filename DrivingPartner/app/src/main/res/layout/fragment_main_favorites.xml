@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/kim"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/kimkim" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:layout_toLeftOf="@id/kim"
+            android:gravity="center"
+            android:textColor="@color/basic_darkgray"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:background="@drawable/shapeeee33"
+            android:text="혹시 왕십릭역을 가신다면 일찍 출발하세요! 현재 올림필 대로에서 사고가 발생하였습니다. 올림픽대로보다 빠른 서빙고로는 어떠세요?" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/line_gray"
+        android:layout_marginBottom="5dp"/>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_road_main1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/map1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:background="#7d000000">
+
+
+                <TextView
+                    android:id="@+id/title_text_road_main1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="경로1"
+                    android:textColor="@color/basic_white"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address_text_road_main1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_text_road_main1"
+                    android:maxLines="2"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="헌릉로(1.6km) > 경부고속도로(7.1km) > 올림픽대로(2.9km)"
+                    android:textColor="@color/basic_white"
+                    android:textSize="7pt" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_road_main2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/map2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#7d000000">
+
+
+                <TextView
+                    android:id="@+id/title_text_road_main2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="경로2"
+                    android:textColor="@color/basic_white"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address_text_road_main2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_text_road_main2"
+                    android:maxLines="2"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="경부고속도로(7.1km)->서 빙고로(3.2km)-> 뚝섬로(1.7km)"
+                    android:textColor="@color/basic_white"
+                    android:textSize="7pt" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_road_main3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/map3" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#7d000000">
+
+
+                <TextView
+                    android:id="@+id/title_text_road_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="경로3"
+                    android:textColor="@color/basic_white"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address_text_road_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_text_road_main3"
+                    android:maxLines="2"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="경부고속도로(7.1km)-> 강변북로(2.4km)-> 동부간선도로(2.2km)"
+                    android:textColor="@color/basic_white"
+                    android:textSize="7pt" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,34 +1,35 @@
-package com.devfactory.drivingpartner;
+package com.devfactory.drivingpartner.app.seach;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.devfactory.drivingpartner.R;
+
 import java.util.ArrayList;
 
 /**
- * Created by choiyejin on 16. 8. 19..
+ * Created by choiyejin on 16. 8. 20..
  */
-public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapter.AppViewHolder> {
+public class SearchUndermeunAdapter extends RecyclerView.Adapter<SearchUndermeunAdapter.AppViewHolder> {
+    private ArrayList<SearchListItem> arrayList;
+    View itemView;
 
-    private ArrayList<String> arrayList;
-
-    public MainRecyclerAdapter(ArrayList<String> arrayList) {
+    public SearchUndermeunAdapter(ArrayList<SearchListItem> arrayList) {
         this.arrayList = arrayList;
     }
 
     @Override
-    public AppViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recyclerview_main, parent, false);
+    public SearchUndermeunAdapter.AppViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler_undermenu_search, parent, false);
         return new AppViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(AppViewHolder holder, int position) {
-        holder.mtextView.setText(arrayList.get(position));
+    public void onBindViewHolder(SearchUndermeunAdapter.AppViewHolder holder, int position) {
+        holder.mtextView.setText(arrayList.get(position).getTourName());
         holder.setItemClickEvent(position);
     }
 
@@ -42,7 +43,6 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
     }
 
     public class AppViewHolder extends RecyclerView.ViewHolder {
-
         protected View view;
         protected TextView mtextView;
         private int id;
@@ -51,7 +51,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
             super(itemView);
             this.view = itemView;
 
-            mtextView = (TextView) view.findViewById(R.id.text_recycler_main);
+            mtextView = (TextView) view.findViewById(R.id.aaa);
         }
 
         private void setItemClickEvent(int id){

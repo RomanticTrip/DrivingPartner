@@ -2,14 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.devfactory.drivingpartner" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".app.MainActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".app.SplashActivity"
+            android:label="@string/title_activity_splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +24,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SplashActivity"
-            android:label="@string/title_activity_splash" >
+            android:name=".app.seach.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".app.guidance.GuidanceActivity"
+            android:label="@string/title_activity_guidance" >
+        </activity>
+        <activity
+            android:name=".app.SinginActivity"
+            android:label="@string/title_activity_singin" >
         </activity>
     </application>
 

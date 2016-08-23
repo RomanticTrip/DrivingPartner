@@ -2,6 +2,28 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash"
-    tools:context="com.devfactory.drivingpartner.SplashActivity">
+    tools:context="com.devfactory.drivingpartner.app.SplashActivity">
+
+    <TextView
+        android:id="@+id/Texttttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Create your Account"
+        android:textColor="#9bffffff"/>
+
+    <Button
+        android:id="@+id/buttnnnn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@id/Texttttt"
+        android:text="Login to my Account"
+        android:textColor="@color/basic_white"
+        android:background="@drawable/shapeeee"/>
 
 </RelativeLayout>
